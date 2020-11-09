@@ -13,6 +13,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello ccccccccc!</h1> <t:myTag/> 
+        <h1>Hello world!</h1> 
+        <t:myTag/> 
+        <t:printtable number="23"></t:printtable>
     </body>
 </html>

@@ -5,7 +5,6 @@
  */
 package tags;
 
-import java.io.IOException;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.TagSupport;
@@ -14,16 +13,24 @@ import javax.servlet.jsp.tagext.TagSupport;
  *
  * @author sicarius
  */
-public class tagHandler extends TagSupport {
+public class printtable extends TagSupport {
+
+    public int number;
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
 
     @Override
     public int doStartTag() throws JspException {
         try {
-
             JspWriter out = pageContext.getOut();
-            out.println("<h1>this is new tage from js</h1>");
+            out.println("<br>");
+            for (int i = 1; i < 10; ++i) {
+                out.println((i * number) + "<br>");
+            }
 
-        } catch (IOException up) {
+        } catch (Exception up) {
             up.printStackTrace();
         }
         return SKIP_BODY; //To change body of generated methods, choose Tools | Templates.

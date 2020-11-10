@@ -25,10 +25,30 @@
         <tag-class>tags.tagHandler</tag-class>
     </tag>
     <tag>
-        <name>printtable</name>
-        <tag-class>tags.printtable</tag-class>
+        <name>substr</name>
+        <tag-class>tags.printSubStr</tag-class>
         <attribute>
-            <name>number</name>
+            <name>str</name>
+            <required>true</required>
+        </attribute> 
+        <attribute>
+            <name>start</name>
+            <required>true</required>
+        </attribute> 
+        <attribute>
+            <name>end</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+    <tag>
+        <name>today</name>
+        <tag-class>tags.todayyy</tag-class>
+    </tag>
+    <tag>
+        <name>reverse</name>
+        <tag-class>tags.reverseStr</tag-class>
+        <attribute>
+            <name>inp</name>
             <required>true</required>
         </attribute>
     </tag>

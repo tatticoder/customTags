@@ -13,8 +13,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello world!</h1> 
-        <t:myTag/> 
-        <t:printtable number="23"></t:printtable>
+        <h1>Current date time is !</h1>
+        <t:today/> 
+        <t:reverse inp="NAMAN SINGHAL 18078570030" />
+        <t:substr start="3" end="25" str="BSc (H) COMPTER SCINECE UNIVERSITY OF DELHI"/>
     </body>
 </html>
